@@ -1,0 +1,33 @@
+body {
+	padding: 20px;
+	font-family: Helvetica, Arial, Sans-Serif;
+}
+
+.ArticleList, .Article {
+	&__title {
+		// font-weight: bold;
+		font-size: 25px;
+		color: DarkGray;
+		padding: 10px 0;
+	}
+	&__publishDate, &__author {
+		color: LightGray;
+	}
+	&__author {
+		font-size: 16px;
+		padding: 10px 0;
+	}
+	&__publishDate {
+		font-size: 12px;
+		padding: 5px 0;
+	}
+}
+
+.Article {
+	&__homeIcon {
+		margin-right: 722px;
+	}
+	&__titleInput {
+		width: 100%;
+	}
+}

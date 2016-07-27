@@ -1,0 +1,25 @@
+body {
+  padding: 20px;
+  font-family: Helvetica, Arial, Sans-Serif; }
+
+.ArticleList__title, .Article__title {
+  font-size: 25px;
+  color: DarkGray;
+  padding: 10px 0; }
+
+.ArticleList__publishDate, .ArticleList__author, .Article__publishDate, .Article__author {
+  color: LightGray; }
+
+.ArticleList__author, .Article__author {
+  font-size: 16px;
+  padding: 10px 0; }
+
+.ArticleList__publishDate, .Article__publishDate {
+  font-size: 12px;
+  padding: 5px 0; }
+
+.Article__homeIcon {
+  margin-right: 722px; }
+
+.Article__titleInput {
+  width: 100%; }

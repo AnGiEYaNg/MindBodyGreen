@@ -1,0 +1,18 @@
+<div class="Article__icons">
+	<i class="fa fa-home fa-4x Article__homeIcon" aria-hidden="true" ui-sref="home"></i>
+	<i class="fa fa-chevron-right fa-4x Article__rightArrow" aria-hidden="true" ui-sref="article({articleId: articleId+1})"></i>
+</div>
+<div>
+	<img src={{articleObj.image}}>
+</div>
+<div class="Article__title" ng-show="!edit">
+	{{articleObj.title}} 
+	<i class="fa fa-pencil fa-2x" aria-hidden="true" ng-click="edit = true"></i>
+</div>
+<div ng-show="!!edit">
+	<input class="Article__title Article__titleInput" ng-model="articleObj.title" ng-keypress="($event.which === 13)?saveTitle(articleObj.title):edit=false">
+</div>
+<div class="Article__author">{{articleObj.author.name}}</div>
+<div class="Article__publishDate">{{articleObj.publishDate | date: "M/d/yyyy h:mm a"}}</div>
+<hr>
+<div ng-bind-html="articleContent"></div>

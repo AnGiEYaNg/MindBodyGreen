@@ -1,0 +1,15 @@
+<div class="ArticleList" ng-repeat="article in mainData track by $index">
+	<div class="ArticleList__block" ui-sref="article({articleId: $index})">
+		<div class="ArticleList__img">
+			<img src={{article.image}}>
+		</div>
+
+		<div class="ArticleList__title">{{article.title}}</div>
+
+		<div class="ArticleList__author">{{article.author.name}}</div>
+
+		<div class="ArticleList__publishDate">{{article.publishDate | date: "M/d/yyyy h:mm a"}}</div>
+
+		<hr>
+	</div>
+</div>
