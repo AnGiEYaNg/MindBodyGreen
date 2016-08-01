@@ -4,11 +4,11 @@
 			<img src={{article.image}}>
 		</div>
 
-		<div class="ArticleList__title">{{article.title}}</div>
+		<h1 class="ArticleList__title">{{article.title}}</h1>
 
-		<div class="ArticleList__author">{{article.author.name}}</div>
+		<h4 class="ArticleList__author">{{article.author.name}}</h4>
 
-		<div class="ArticleList__publishDate">{{article.publishDate | date: "M/d/yyyy h:mm a"}}</div>
+		<h5 class="ArticleList__publishDate">{{article.publishDate | date: "M/d/yyyy h:mm a"}}</h5>
 
 		<hr>
 	</div>

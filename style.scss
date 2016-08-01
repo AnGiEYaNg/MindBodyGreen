@@ -5,21 +5,10 @@ body {
 
 .ArticleList, .Article {
 	&__title {
-		// font-weight: bold;
-		font-size: 25px;
 		color: DarkGray;
-		padding: 10px 0;
 	}
 	&__publishDate, &__author {
 		color: LightGray;
-	}
-	&__author {
-		font-size: 16px;
-		padding: 10px 0;
-	}
-	&__publishDate {
-		font-size: 12px;
-		padding: 5px 0;
 	}
 }
 
@@ -28,6 +17,9 @@ body {
 		margin-right: 722px;
 	}
 	&__titleInput {
-		width: 100%;
+		color: DarkGray;
+		font-size: 2em;
+		width: 825px;
+		margin: 21px 0;
 	}
 }

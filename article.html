@@ -5,14 +5,15 @@
 <div>
 	<img src={{articleObj.image}}>
 </div>
-<div class="Article__title" ng-show="!edit">
+<h1 class="Article__title" ng-show="!edit">
 	{{articleObj.title}} 
 	<i class="fa fa-pencil fa-2x" aria-hidden="true" ng-click="edit = true"></i>
+</h1>
+<div ng-show="!!edit" class="Article__title">
+	<input class="Article__titleInput" ng-model="articleObj.title" ng-keydown="$event.which === 13 && saveTitle(articleObj.title)" ng-focus="true">
+	<i class="fa fa-check fa-2x" aria-hidden="true" ng-click="saveTitle(articleObj.title)"></i>
 </div>
-<div ng-show="!!edit">
-	<input class="Article__title Article__titleInput" ng-model="articleObj.title" ng-keypress="($event.which === 13)?saveTitle(articleObj.title):edit=false">
-</div>
-<div class="Article__author">{{articleObj.author.name}}</div>
-<div class="Article__publishDate">{{articleObj.publishDate | date: "M/d/yyyy h:mm a"}}</div>
+<h4 class="Article__author">{{articleObj.author.name}}</h4>
+<h5 class="Article__publishDate">{{articleObj.publishDate | date: "M/d/yyyy h:mm a"}}</h5>
 <hr>
-<div ng-bind-html="articleContent"></div>
+<p ng-bind-html="articleContent"></p>
